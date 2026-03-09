@@ -67,20 +67,66 @@
     <label for="rentang">Rentang harga:</label>
     <input type="range" name="rh" id="rh" min="1" max="50">
     <br>
-    <label for="search">Mencari kata di google</label>
+    <label for="search">Mencari kata di google:</label>
     <input type="search" name="q" id="cari">
     <input type="submit" value="pencarian">
     <br>
-    <label for="telepon"></label>
+    <label for="tel1">Telepon:</label>
     <input type="tel" name="telp" id="telp" pattern="[0-9]{3}[0-9]{10}[A-Z]{1}">
     <br>
-    <label for="clr">warna</label>
+    <label for="clr">warna:</label>
     <input type="color" name="wrn" id="wrn">
+    <br>
+    <label for="bulan">bulan:</label>
+    <input type="month" name="bln" id="bln">
+    <br>
+    <label  for="week">Minggu ke:</label>
+    <input type="week" name="week1" id="week1">
+    <br>
+    <label for="file">Upload file:</label>
+    <input type="file" name="file1" id="file1">
+    <br>
+    <label for="url">Upload Url:</label>
+    <input type="url" name="url1" id="url1">
+    <br>
+    <input type="submit" value="Validasikan Isian">
+    <input type="reset" value="Hapus semua Isian">
    </form>
 
-   <form action="https://www.google.com/" method="get" target="_blank">
-    <input type="text" name="q" id="q" placeholder="Cari kata yang diinputkan ">
-    <input type="submit" value="pencarian">
+   <form action="https://www.crazygames.com/" method="get" target="_blank">
+    <input type="hidden" name="sembunyi" id="sembunyi" id="Data rahasia">
+    <input type="image" src="gambar/joj.png" alt="ini adalah gambar jojo" width="250" height="300">
+  <br>
+    <label for="tgl daftar"></label>
+    <input type="date" name="tgldft" id="tgldft"
+    max="2026-03-31" min="2026-03-01">
+    <br>
+    <label for="multifl">Updload lebih dari 1 file</label>
+    <input type="file" name="multifile" id="multifile">
+    <br>
+    <label for="Pilihanmateri">Pilihan Materi Ekstra</label>
+    <select name="pm" id="pm" size="2"multiple></select>
+    <option value="kulintang">Kulintang</option>
+    <option value="Basket">basket</option>
+    <option value="Webdesain">Webdesain</option>
+    <option value="fotografi"></option>
+    <option value="matematika"></option>
+    </select>
+    <br>
+    <label for="ket">Keterangan:</label>
+    <textarea name="ket1" id="ket1" cols="30" rows="20"></textarea>
+    <br>
+    <fieldset>
+        <legend>biodata</legend>
+        <label for="username"></label>
+        <input type="text" name="usr" id="usr" maxlength="10" size="50" autofocus>
+        <br><br>
+        <label for="pass1">password</label>
+        <input type="password" name="pass2" id="pass2">
+        <br><br>
+        <input type="submit" value="login">
+        <input type="reset" value="Delete">
+    </fieldset>
    </form>
 </body>
     </html>
