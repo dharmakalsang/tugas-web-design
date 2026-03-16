@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Festival Teknologi Sekolah Santa Clara</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Festival Teknologi Sekolah Santa Clara</h2>
+     <form action= "https://www.google.com/search"></form>
+    <table border="1">
+        <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text" name="nama" maxlength="20" required></td>
+        </tr>
+        
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Pwd" id="Pwd" size="20"></td>
+        </tr>
+        
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="eml" id="eml" size="20"></td>
+        </tr>
+        
+        <tr>
+            <td>No Telepon</td>
+            <td><input type="tel" name="telepon" maxlength="13" pattern="[0-9]{10,13}" required></td>
+        </tr>
+        
+        <tr>
+            <td>Umur</td>
+            <td><input type="number" name="age" id="age" min="17" max="50"></td>
+        </tr>
+        
+        <tr>
+            <td>Tanggal Daftar</td>
+            <td><input type="date" name="tanggal" id="tanggal" min="2026-03-01" max="2026-03-31"></td>
+        </tr>
+        
+        <tr>
+            <td>Pilih Lomba</td>
+            <td>
+               <br>
+                    <input type="checkbox" name="lomba" id="coding" value="coding">
+                    <label for="coding">Coding</label>
+                <br>
+                    <input type="checkbox" name="lomba" id="desain_poster" value="desain_poster" checked>
+                    <label for="desain_poster">Desain Poster</label>
+                <br>
+                    <input type="checkbox" name="lomba" id="game_tournament" value="game_tournament">
+                    <label for="game_tournament">Game Tournament</label>
+                <br>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Pilih Kelas</td>
+            <td>
+                <select name="kelas" id="kelas" required>
+                    <option value="7">Kelas 7</option>
+                    <option value="8" selected>Kelas 8</option>
+                    <option value="9">Kelas 9</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Cari Referensi</td>
+            <td>
+            <form action="https://www.google.com/search" method="get" target="_blank">
+    <input type="search" name="q" id="search" placeholder="Ketik kata pencarian...">
+    <input type="submit" value="pencarian">
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Daftar">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
